@@ -1,0 +1,28 @@
+# Comment out anything you don't need.                       #
+# Core HTTP client
+# Data manipulation (CSV loading, optional but recommended)
+# Environment variable loading (.env)
+# ib_insync>=0.9.86
+# MetaTrader 5 Python bridge (pulls minute bars from local terminal)
+# Minimal deps for news_obv_rsi_tiingo.py
+# Optional fallback recent 1m data (remove if you don't want it)
+# Optional if you later enable IBKR execution
+# Requirements for stock news + MT5 price reaction analyzer #
+############################################################
+ib_insync
+MetaTrader5>=5.0
+numpy
+numpy>=1.24.0
+pandas
+pandas>=2.0.0
+python-dateutil
+python-dateutil>=2.8.2
+python-dotenv
+python-dotenv>=1.0.0
+pytz
+pytz>=2023.3
+requests
+requests>=2.31.0
+ta
+yfinance>=0.2.40
+optuna>=3.6.0
