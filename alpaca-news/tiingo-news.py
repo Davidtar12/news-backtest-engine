@@ -7,7 +7,7 @@ import pytz
 import textwrap
 import statistics
 
-load_dotenv(r"C:\path\to\your_data")
+load_dotenv()
 TIINGO_KEY = os.getenv("TIINGO_API_KEY")
 
 # CONFIG
@@ -162,7 +162,7 @@ import pytz
 import textwrap
 import statistics
 
-load_dotenv(r"C:\path\to\your_data")
+load_dotenv()
 INGO_KEY = os.getenv("TIINGO_API_KEY") or os.getenv("TIINGO_KEY")
 
 # CONFIG

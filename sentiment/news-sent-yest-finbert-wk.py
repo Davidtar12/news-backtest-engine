@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from datetime import datetime, time as _time, timedelta
 import pytz
 
-load_dotenv("C:\path\to\your_data")
+load_dotenv()
 API_KEY = os.getenv("APCA_API_KEY_ID")
 API_SECRET = os.getenv("APCA_API_SECRET_KEY")
 

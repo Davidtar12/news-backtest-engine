@@ -5,7 +5,7 @@ from datetime import datetime, time as _time, timedelta
 import pytz
 import time
 
-load_dotenv(r"C:\path\to\your_data")
+load_dotenv()
 POLYGON_KEY = os.getenv("POLYGON_API_KEY")
 
 # CONFIG

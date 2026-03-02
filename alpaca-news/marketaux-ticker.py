@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from datetime import datetime
 import pytz
 
-load_dotenv("C:\path\to\your_data")
+load_dotenv()
 MARKETAUX_API_KEY = os.getenv("MARKETAUX_API_KEY")
 
 # CONFIG
