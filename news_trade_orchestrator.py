@@ -1767,7 +1767,7 @@ def main(argv: Optional[List[str]] = None) -> int:
                 from dotenv import load_dotenv
                 load_dotenv()
                 
-                LOGIN = int(os.getenv('ADMIRAL_MT5_LOGIN', 'ADMIRALS_ACCOUNT'))
+                LOGIN = int(os.getenv('ADMIRAL_MT5_LOGIN', '0'))
                 PASSWORD = os.getenv('ADMIRAL_PASSWORD')
                 SERVER = os.getenv('ADMIRAL_MT5_SERVER', 'AdmiralsSC-Demo')
                 PATH = os.getenv('ADMIRAL_MT5_PATH', r'C:\Program Files\Admirals SC MT5 Terminal\terminal64.exe')
@@ -1782,7 +1782,7 @@ def main(argv: Optional[List[str]] = None) -> int:
                 # Detect which broker we're connected to
                 account_info = mt5.account_info()
                 if account_info:
-                    if 'Admirals' in account_info.server or account_info.login == ADMIRALS_ACCOUNT:
+                    if 'Admirals' in account_info.server or account_info.login == int(os.getenv('ADMIRAL_MT5_LOGIN', '0')):
                         mt5_broker = 'admirals'
                         print(f'✅ MT5 connected to Admirals (Account: {account_info.login})', file=sys.stderr)
                     elif 'Pepperstone' in account_info.server or account_info.login == 61418548:
