@@ -6,7 +6,7 @@ import websockets
 from collections import deque
 
 # Load API keys from .env file
-load_dotenv("c:/Users/david/OneDrive/Documents/DS - Coding - Python/Stocks/Alpaca/alpkey.env")
+load_dotenv()
 API_KEY = os.getenv("APCA_API_KEY_ID")
 API_SECRET = os.getenv("APCA_API_SECRET_KEY")
 

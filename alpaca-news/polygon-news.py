@@ -5,7 +5,7 @@ from datetime import datetime, time as _time, timedelta
 import pytz
 import time
 
-load_dotenv(r"c:/Users/david/OneDrive/Documents/DS - Coding - Python/Stocks/Alpaca/alpkey.env")
+load_dotenv()
 POLYGON_KEY = os.getenv("POLYGON_API_KEY")
 
 # CONFIG

@@ -7,7 +7,7 @@ import pytz
 import textwrap
 import statistics
 
-load_dotenv(r"c:/Users/david/OneDrive/Documents/DS - Coding - Python/Stocks/Alpaca/alpkey.env")
+load_dotenv()
 TIINGO_KEY = os.getenv("TIINGO_API_KEY")
 
 # CONFIG
@@ -162,7 +162,7 @@ import pytz
 import textwrap
 import statistics
 
-load_dotenv(r"c:/Users/david/OneDrive/Documents/DS - Coding - Python/Stocks/Alpaca/alpkey.env")
+load_dotenv()
 INGO_KEY = os.getenv("TIINGO_API_KEY") or os.getenv("TIINGO_KEY")
 
 # CONFIG
